@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var kdata=['경기도','서울','강원도','충청도','전라도','경상도']
+        var scores = new Array(123,456,345,333,777,653);
+        function printArr(value,idx){
+            document.write("자료["+idx +"] = "+value+"<br/>");
+        }
+        function printArr2(value){
+            document.write(value+"<br/>");
+        }
+        var sum = 0
+        function sumValue(value){
+            sum += value;
+        }
+        kdata.forEach(printArr);
+        kdata.forEach(printArr2);
+        scores.forEach(sumValue);
+        document.write("합 : "+ sum);
+    </script>
+</body>
+</html>
